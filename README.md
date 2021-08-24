@@ -24,11 +24,11 @@ To install all the required dependencies:
 conda create -n auto-drac python=3.7
 conda activate auto-drac
 
-git clone git@github.com:rraileanu/auto-drac.git
+git clone https://github.com/jajajag/auto-drac
 cd auto-drac
 pip install -r requirements.txt
 
-git clone https://github.com/openai/baselines.git
+git clone https://github.com/openai/baselines
 cd baselines 
 python setup.py install 
 
