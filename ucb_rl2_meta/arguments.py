@@ -121,18 +121,23 @@ parser.add_argument(
 # Procgen Arguments.
 parser.add_argument(
     '--distribution_mode',
-    default='easy',
+    default='hard',
     help='distribution of envs for procgen')
 parser.add_argument(
     '--num_levels',
     type=int,
-    default=200,
+    default=500,
     help='number of Procgen levels to use for training')
 parser.add_argument(
     '--start_level',
     type=int,
     default=0,
     help='start level id for sampling Procgen levels')
+parser.add_argument(
+    '--eval_levels',
+    type=int,
+    default=0,
+    help='the maximum number of evaluation levels')
 
 # DrAC Arguments.
 parser.add_argument(

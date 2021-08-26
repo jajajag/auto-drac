@@ -17,7 +17,7 @@ def evaluate(args, actor_critic, device, num_processes=1, aug_id=None):
     
     # Sample Levels From the Full Distribution 
     venv = ProcgenEnv(num_envs=num_processes, env_name=args.env_name, \
-        num_levels=0, start_level=0, \
+        num_levels=args.eval_levels, start_level=0, \
         distribution_mode=args.distribution_mode)
     venv = VecExtractDictObs(venv, "rgb")
     venv = VecMonitor(venv=venv, filename=None, keep_buf=100)
