@@ -1,4 +1,6 @@
 # Auto-DrAC: Automatic Data-Regularized Actor-Critic
+Modified as a comparison method for our [**PAADA**](https://arxiv.org/pdf/2106.15587.pdf) work.
+
 This is a PyTorch implementation of the methods proposed in
 
 [**Automatic Data Augmentation for Generalization in Deep Reinforcement Learning**](https://arxiv.org/pdf/2006.12862.pdf) by 
